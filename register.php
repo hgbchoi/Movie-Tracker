@@ -27,6 +27,8 @@ widgets::navbar();
             <input id = "email-field" name = "emailField" type = "text" placeholder = "Email">
             <button id = "signin-button" name = "signinButton">Register</button>
           </form>
+          <p>Already signed up? <a class = "register-button" href = "login.php" >Sign in here</a></p>
+
         </div>
       </div>
       <script type = "text/javascript" src="javascript/validate.js"></script>
