@@ -2,9 +2,11 @@
 <?php
 widgets::navbar();
 widgets::heroBanner();
+
 ?>
 
 <div class = "wrapper">
+  <div class = "background-white">
   <div class = "content">
     <div class = "icon">
       <i class="far fa-edit fa-2x"></i>
@@ -23,6 +25,7 @@ widgets::heroBanner();
       <i class="far fa-edit fa-2x"></i>
     </div>
   </div>
+</div>
 </div>
   <script type = "text/javascript" src="javascript/main.js"></script>
 </body>

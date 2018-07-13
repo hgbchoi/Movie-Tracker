@@ -18,7 +18,10 @@ header("location:../index.php?register=success");
 
 if (isset($_POST['loginButton'])){
 if ($user->checkUserLogin($_POST['emailField'], $_POST['passwordField'])){
-  header("location:loggedin.php");
+  session_start();
+  $_SESSION['username'] = $_POST['emailField'];
+  $_SESSION['login'] = true;
+  header("location:../index.php");
 } else {
   header("location:../login.php?login=failed");
 }

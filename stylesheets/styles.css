@@ -12,23 +12,30 @@ html, body {
 
 /* line 15, ../sass/styles.scss */
 nav {
-  background-color: #333;
+  background-color: #0e0b16;
   position: fixed;
+  border-bottom: 10px solid #333;
   top: 0;
   width: 100%;
 }
-/* line 21, ../sass/styles.scss */
+@media (max-width: 768px) {
+  /* line 15, ../sass/styles.scss */
+  nav {
+    border-bottom: none;
+  }
+}
+/* line 25, ../sass/styles.scss */
 nav ul {
   margin: 0;
   padding: 0;
   color: white;
   list-style-type: none;
 }
-/* line 26, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 nav ul li {
   float: right;
 }
-/* line 28, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 nav ul li a {
   color: white;
   display: inline-block;
@@ -36,46 +43,51 @@ nav ul li a {
   text-decoration: none;
   padding: 14px 16px;
 }
-/* line 34, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 nav ul li a:visited {
   color: white;
 }
-/* line 37, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 nav ul li a:hover {
   color: #AAA;
 }
 
 @media (max-width: 768px) {
-  /* line 48, ../sass/styles.scss */
+  /* line 52, ../sass/styles.scss */
   ul li {
     display: none;
   }
-  /* line 50, ../sass/styles.scss */
+  /* line 54, ../sass/styles.scss */
   ul li a {
     width: 100%;
   }
 
-  /* line 54, ../sass/styles.scss */
+  /* line 58, ../sass/styles.scss */
   .hamburger {
     display: block;
     text-align: right;
     padding: 14px 16px;
     color: white;
   }
-  /* line 55, ../sass/styles.scss */
+  /* line 59, ../sass/styles.scss */
   .hamburger:hover {
     cursor: pointer;
   }
 
-  /* line 64, ../sass/styles.scss */
+  /* line 68, ../sass/styles.scss */
   .responsive-nav-on {
     display: block;
     float: none;
     text-align: center;
-    border-bottom: white 2px solid;
+    border-bottom: white 1px solid;
   }
 }
-/* line 72, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
+.logoutForm {
+  display: none;
+}
+
+/* line 79, ../sass/styles.scss */
 .hero-banner {
   width: 100%;
   height: 600px;
@@ -87,12 +99,12 @@ nav ul li a:hover {
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  /* line 72, ../sass/styles.scss */
+  /* line 79, ../sass/styles.scss */
   .hero-banner {
     height: 400px;
   }
 }
-/* line 84, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .hero-banner .hero-text {
   color: #fff;
   padding-bottom: 30px;
@@ -102,34 +114,41 @@ nav ul li a:hover {
   bottom: 250px;
 }
 @media (max-width: 768px) {
-  /* line 84, ../sass/styles.scss */
+  /* line 91, ../sass/styles.scss */
   .hero-banner .hero-text {
     bottom: 100px;
   }
 }
-/* line 94, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 .hero-banner .hero-text h1, .hero-banner .hero-text p {
   margin-left: 200px;
 }
 @media (max-width: 768px) {
-  /* line 94, ../sass/styles.scss */
+  /* line 101, ../sass/styles.scss */
   .hero-banner .hero-text h1, .hero-banner .hero-text p {
     margin-left: 30px;
   }
 }
-/* line 101, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .hero-banner .hero-text p {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
 }
 
-/* line 111, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .wrapper {
   display: flex;
   flex-direction: column;
+  background-color: #0e0b16;
 }
-/* line 115, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
+.wrapper .background-white {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+/* line 127, ../sass/styles.scss */
 .wrapper .content {
   display: flex;
   margin-top: 50px;
@@ -137,24 +156,24 @@ nav ul li a:hover {
   margin-right: 15%;
   align-items: center;
 }
-/* line 122, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .wrapper .content .icon {
   font-size: 100px;
   margin-right: 20px;
 }
-/* line 126, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .wrapper .content .text {
   display: inline;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .wrapper-login, .wrapper-register {
   text-align: center;
-  background-color: #4CAF50;
+  background-color: #0e0b16;
   height: 100%;
   padding-top: 300px;
 }
-/* line 140, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
   background-color: white;
   display: block;
@@ -164,14 +183,14 @@ nav ul li a:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 @media (max-width: 768px) {
-  /* line 140, ../sass/styles.scss */
+  /* line 152, ../sass/styles.scss */
   .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
     width: 90%;
     padding: 20px 10px;
     height: auto;
   }
 }
-/* line 152, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .wrapper-login .signin-box input, .wrapper-register .signin-box input, .wrapper-register .register-box input {
   margin: 0 auto;
   display: block;
@@ -181,49 +200,49 @@ nav ul li a:hover {
   width: 100%;
   background-color: #f2f2f2;
 }
-/* line 163, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .wrapper-login .signin-box button, .wrapper-register .signin-box button, .wrapper-register .register-box button {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #0e0b16;
   border: none;
   color: white;
   margin-bottom: 10px;
   font-size: 15px;
 }
-/* line 174, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 .wrapper-login .signin-box button:hover, .wrapper-register .signin-box button:hover, .wrapper-register .register-box button:hover {
   cursor: pointer;
-  background-color: #3B9E30;
+  background-color: #333;
 }
-/* line 179, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .wrapper-login .signin-box p, .wrapper-register .signin-box p, .wrapper-register .register-box p {
   font-size: 12px;
   color: #CCCCCC;
 }
-/* line 183, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .wrapper-login .signin-box a, .wrapper-register .signin-box a, .wrapper-register .register-box a {
   text-decoration: none;
   font-size: 12px;
-  color: #4CAF50;
+  color: #0e0b16;
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 .invalidInput {
   text-align: left;
 }
-/* line 204, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .invalidInput .hidden {
   display: none;
 }
 
-/* line 210, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 .red-border {
   border: 2px solid red !important;
 }
 
-/* line 213, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .red-text {
   color: red !important;
   font-size: 12px !important;

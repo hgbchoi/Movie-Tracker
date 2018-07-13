@@ -2,6 +2,7 @@
 class widgets {
 
   public static function navbar(){
+    session_start();
 ?>
     <head>
       <title>Financial Tracker | Control your bills and expenses</title>
@@ -16,11 +17,21 @@ class widgets {
       <nav>
           <a class = "hamburger is-hidden" id = "hamburger"><i  class = "fa fa-bars fa-2x"></i></a>
           <div class = "nav-items">
+            <?php
+              if (!isset($_SESSION['login'])){
+            ?>
           <ul>
             <li><a href="register.php">Register</a></li>
             <li><a href="login.php">Sign in</a></li>
             <li><a href="index.php">Home</a></li>
           </ul>
+        <?php } else {?>
+          <form class = "logoutForm" action = "includes/logoutProcess.php" id = "logoutForm"></form>
+          <ul>
+          <li><a href = "#" id = "logout">Log Out</a></li>
+          <li><a href="index.php">Home</a></li>
+        </ul>
+       <?php }?>
           </div>
       </nav>
 <?php
