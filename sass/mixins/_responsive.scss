@@ -3,3 +3,9 @@
   @media (max-width: 768px) { @content; }
 
 }
+
+@mixin screen-md (){
+
+  @media (min-width: 769px) { @content; }
+
+}

@@ -2,6 +2,7 @@
 <?php
 widgets::navbar();
 widgets::heroBanner();
+
 ?>
 
 <div class = "wrapper">

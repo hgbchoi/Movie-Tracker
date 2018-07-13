@@ -83,6 +83,11 @@ nav ul li a:hover {
   }
 }
 /* line 76, ../sass/styles.scss */
+.logoutForm {
+  display: none;
+}
+
+/* line 79, ../sass/styles.scss */
 .hero-banner {
   width: 100%;
   height: 600px;
@@ -94,12 +99,12 @@ nav ul li a:hover {
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  /* line 76, ../sass/styles.scss */
+  /* line 79, ../sass/styles.scss */
   .hero-banner {
     height: 400px;
   }
 }
-/* line 88, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .hero-banner .hero-text {
   color: #fff;
   padding-bottom: 30px;
@@ -109,41 +114,41 @@ nav ul li a:hover {
   bottom: 250px;
 }
 @media (max-width: 768px) {
-  /* line 88, ../sass/styles.scss */
+  /* line 91, ../sass/styles.scss */
   .hero-banner .hero-text {
     bottom: 100px;
   }
 }
-/* line 98, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 .hero-banner .hero-text h1, .hero-banner .hero-text p {
   margin-left: 200px;
 }
 @media (max-width: 768px) {
-  /* line 98, ../sass/styles.scss */
+  /* line 101, ../sass/styles.scss */
   .hero-banner .hero-text h1, .hero-banner .hero-text p {
     margin-left: 30px;
   }
 }
-/* line 105, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .hero-banner .hero-text p {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .wrapper {
   display: flex;
   flex-direction: column;
   background-color: #0e0b16;
 }
-/* line 119, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .wrapper .background-white {
   width: 80%;
   margin: 0 auto;
   background-color: white;
 }
-/* line 124, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .wrapper .content {
   display: flex;
   margin-top: 50px;
@@ -151,24 +156,24 @@ nav ul li a:hover {
   margin-right: 15%;
   align-items: center;
 }
-/* line 131, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .wrapper .content .icon {
   font-size: 100px;
   margin-right: 20px;
 }
-/* line 135, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .wrapper .content .text {
   display: inline;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .wrapper-login, .wrapper-register {
   text-align: center;
   background-color: #0e0b16;
   height: 100%;
   padding-top: 300px;
 }
-/* line 149, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
   background-color: white;
   display: block;
@@ -178,14 +183,14 @@ nav ul li a:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 @media (max-width: 768px) {
-  /* line 149, ../sass/styles.scss */
+  /* line 152, ../sass/styles.scss */
   .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
     width: 90%;
     padding: 20px 10px;
     height: auto;
   }
 }
-/* line 161, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .wrapper-login .signin-box input, .wrapper-register .signin-box input, .wrapper-register .register-box input {
   margin: 0 auto;
   display: block;
@@ -195,7 +200,7 @@ nav ul li a:hover {
   width: 100%;
   background-color: #f2f2f2;
 }
-/* line 172, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .wrapper-login .signin-box button, .wrapper-register .signin-box button, .wrapper-register .register-box button {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -206,38 +211,38 @@ nav ul li a:hover {
   margin-bottom: 10px;
   font-size: 15px;
 }
-/* line 183, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 .wrapper-login .signin-box button:hover, .wrapper-register .signin-box button:hover, .wrapper-register .register-box button:hover {
   cursor: pointer;
   background-color: #333;
 }
-/* line 188, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .wrapper-login .signin-box p, .wrapper-register .signin-box p, .wrapper-register .register-box p {
   font-size: 12px;
   color: #CCCCCC;
 }
-/* line 192, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .wrapper-login .signin-box a, .wrapper-register .signin-box a, .wrapper-register .register-box a {
   text-decoration: none;
   font-size: 12px;
   color: #0e0b16;
 }
 
-/* line 208, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 .invalidInput {
   text-align: left;
 }
-/* line 213, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .invalidInput .hidden {
   display: none;
 }
 
-/* line 219, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 .red-border {
   border: 2px solid red !important;
 }
 
-/* line 222, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .red-text {
   color: red !important;
   font-size: 12px !important;
