@@ -29,7 +29,9 @@ class widgets {
           <form class = "logoutForm" action = "includes/logoutProcess.php" id = "logoutForm"></form>
           <ul>
           <li><a href = "#" id = "logout">Log Out</a></li>
+          <li><a href="moviePostsManager.php">Logs</a></li>
           <li><a href="index.php">Home</a></li>
+          <li><p>signed in as: <?php echo $_SESSION['username']?></p></li>
         </ul>
        <?php }?>
           </div>

@@ -51,30 +51,43 @@ nav ul li a:visited {
 nav ul li a:hover {
   color: #AAA;
 }
+/* line 46, ../sass/styles.scss */
+nav ul li p {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  padding: 17px 16px;
+  margin: 0;
+}
 
 @media (max-width: 768px) {
-  /* line 52, ../sass/styles.scss */
+  /* line 60, ../sass/styles.scss */
   ul li {
     display: none;
   }
-  /* line 54, ../sass/styles.scss */
+  /* line 62, ../sass/styles.scss */
   ul li a {
     width: 100%;
   }
+  /* line 66, ../sass/styles.scss */
+  ul li p {
+    display: none !important;
+  }
 
-  /* line 58, ../sass/styles.scss */
+  /* line 71, ../sass/styles.scss */
   .hamburger {
     display: block;
     text-align: right;
     padding: 14px 16px;
     color: white;
   }
-  /* line 59, ../sass/styles.scss */
+  /* line 72, ../sass/styles.scss */
   .hamburger:hover {
     cursor: pointer;
   }
 
-  /* line 68, ../sass/styles.scss */
+  /* line 81, ../sass/styles.scss */
   .responsive-nav-on {
     display: block;
     float: none;
@@ -82,12 +95,12 @@ nav ul li a:hover {
     border-bottom: white 1px solid;
   }
 }
-/* line 76, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 .logoutForm {
   display: none;
 }
 
-/* line 79, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 .hero-banner {
   width: 100%;
   height: 600px;
@@ -99,12 +112,12 @@ nav ul li a:hover {
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  /* line 79, ../sass/styles.scss */
+  /* line 92, ../sass/styles.scss */
   .hero-banner {
     height: 400px;
   }
 }
-/* line 91, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .hero-banner .hero-text {
   color: #fff;
   padding-bottom: 30px;
@@ -114,41 +127,41 @@ nav ul li a:hover {
   bottom: 250px;
 }
 @media (max-width: 768px) {
-  /* line 91, ../sass/styles.scss */
+  /* line 104, ../sass/styles.scss */
   .hero-banner .hero-text {
     bottom: 100px;
   }
 }
-/* line 101, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .hero-banner .hero-text h1, .hero-banner .hero-text p {
   margin-left: 200px;
 }
 @media (max-width: 768px) {
-  /* line 101, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .hero-banner .hero-text h1, .hero-banner .hero-text p {
     margin-left: 30px;
   }
 }
-/* line 108, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 .hero-banner .hero-text p {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
 }
 
-/* line 118, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .wrapper {
   display: flex;
   flex-direction: column;
   background-color: #0e0b16;
 }
-/* line 122, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .wrapper .background-white {
   width: 80%;
   margin: 0 auto;
   background-color: white;
 }
-/* line 127, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .wrapper .content {
   display: flex;
   margin-top: 50px;
@@ -156,24 +169,24 @@ nav ul li a:hover {
   margin-right: 15%;
   align-items: center;
 }
-/* line 134, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .wrapper .content .icon {
   font-size: 100px;
   margin-right: 20px;
 }
-/* line 138, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .wrapper .content .text {
   display: inline;
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .wrapper-login, .wrapper-register {
   text-align: center;
   background-color: #0e0b16;
   height: 100%;
   padding-top: 300px;
 }
-/* line 152, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
   background-color: white;
   display: block;
@@ -183,14 +196,14 @@ nav ul li a:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 @media (max-width: 768px) {
-  /* line 152, ../sass/styles.scss */
+  /* line 165, ../sass/styles.scss */
   .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
     width: 90%;
     padding: 20px 10px;
     height: auto;
   }
 }
-/* line 164, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .wrapper-login .signin-box input, .wrapper-register .signin-box input, .wrapper-register .register-box input {
   margin: 0 auto;
   display: block;
@@ -200,7 +213,7 @@ nav ul li a:hover {
   width: 100%;
   background-color: #f2f2f2;
 }
-/* line 175, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .wrapper-login .signin-box button, .wrapper-register .signin-box button, .wrapper-register .register-box button {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -211,38 +224,38 @@ nav ul li a:hover {
   margin-bottom: 10px;
   font-size: 15px;
 }
-/* line 186, ../sass/styles.scss */
+/* line 199, ../sass/styles.scss */
 .wrapper-login .signin-box button:hover, .wrapper-register .signin-box button:hover, .wrapper-register .register-box button:hover {
   cursor: pointer;
   background-color: #333;
 }
-/* line 191, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .wrapper-login .signin-box p, .wrapper-register .signin-box p, .wrapper-register .register-box p {
   font-size: 12px;
   color: #CCCCCC;
 }
-/* line 195, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .wrapper-login .signin-box a, .wrapper-register .signin-box a, .wrapper-register .register-box a {
   text-decoration: none;
   font-size: 12px;
   color: #0e0b16;
 }
 
-/* line 211, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .invalidInput {
   text-align: left;
 }
-/* line 216, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 .invalidInput .hidden {
   display: none;
 }
 
-/* line 222, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .red-border {
   border: 2px solid red !important;
 }
 
-/* line 225, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .red-text {
   color: red !important;
   font-size: 12px !important;

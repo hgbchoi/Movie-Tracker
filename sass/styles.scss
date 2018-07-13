@@ -43,6 +43,14 @@ nav {
 
         }
       }
+      p {
+        color: white;
+        display:inline-block;
+        text-align: center;
+        font-size: 12px;
+        padding:17px 16px;
+        margin: 0;
+      }
   }
 }
 
@@ -54,7 +62,12 @@ nav {
       a {
         width:100%;
       }
+
+      p{
+        display: none !important;
+      }
   }
+
   .hamburger {
     &:hover {
       cursor:pointer;
