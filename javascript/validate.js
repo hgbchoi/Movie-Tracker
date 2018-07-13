@@ -5,10 +5,11 @@ var validEmail;
 
 function checkUsername(){
   var username = $('#username-field').val();
-  var regex = /^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$/;
+  var regex = /^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){4,18}[a-zA-Z0-9]$/;
 
   if (!regex.test(username)){
       $('#username-field').addClass('red-border');
+      $('#existingUsername').addClass('hidden');
       $('#invalidUsername').removeClass('hidden');
       validUsername = false;
   } else {
