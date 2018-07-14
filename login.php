@@ -7,13 +7,17 @@ $message = '';
    $message = "Invalid username or password";
 
  }
+ if (@$_SESSION['login'] == true){
+
+   header("location:index.php");
+ }
 ?>
 
 
-  <div class = "wrapper-login">
-      <div class = "signin-box">
-        <form action ="includes/processForms.php" method = "POST">
-          <h1>Sign In</h1>
+  <div class = "wrapper-form">
+      <div class = "form-box">
+        <form action ="includes/processLoginForm.php" method = "POST">
+          <h1>Sign In <?php echo $_SESSION['login']?></h1>
           <p class = "red-text"><?php echo $message?></p>
           <input id = "email-field" name = "emailField" type = "text" placeholder = "Username">
           <input id = "password-field" name = "passwordField" type = "password" placeholder = "Password" >
