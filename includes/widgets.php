@@ -76,7 +76,7 @@ class widgets {
       </div>
   </nav>
 
-  }
+
 
 <?php
   }

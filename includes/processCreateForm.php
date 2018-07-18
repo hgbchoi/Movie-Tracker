@@ -5,17 +5,17 @@ include_once "movies.php";
 session_start();
 
 $user = new users();
-$movie = new movies();
+
 
 if (isset($_POST['createButton']) && isset($_SESSION['username'])){
-
+$movie = new movies($_SESSION['username']);
 $movieName = $_POST['titleField'];
 $userName = $_SESSION['username'];
 $rating = $_POST['ratingField'];
 $comments = $_POST['commentField'];
 $postDate = date("Y-m-d H:i:s");
 
-$movie->addPost($movieName, $userName, $rating, $comments, $postDate);
+$movie->addPost($userName, $movieName, $rating, $comments, $postDate);
 header("location:../viewposts.php");
 
 

@@ -17,7 +17,7 @@ $message = '';
   <div class = "wrapper-form">
       <div class = "form-box">
         <form action ="includes/processLoginForm.php" method = "POST">
-          <h1>Sign In <?php echo $_SESSION['login']?></h1>
+          <h1>Sign In</h1>
           <p class = "red-text"><?php echo $message?></p>
           <input id = "email-field" name = "emailField" type = "text" placeholder = "Username">
           <input id = "password-field" name = "passwordField" type = "password" placeholder = "Password" >

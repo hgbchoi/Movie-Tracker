@@ -5,7 +5,7 @@ include_once "movies.php";
 session_start();
 
 $user = new users();
-$movie = new movies();
+
 
 
 
