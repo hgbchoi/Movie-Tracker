@@ -9,7 +9,7 @@ private $serverName;
 
 protected function connect(){
 
-  $this -> serverName = 'localhost:3307';
+  $this -> serverName = 'localhost';
   $this -> dbUserId = 'root';
   $this -> dbPassword = '';
   $this -> dbName = 'movietrack';

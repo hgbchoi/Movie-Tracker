@@ -4,9 +4,9 @@ widgets::navbar();
 ?>
 
 
-      <div class = "wrapper-register">
-        <div class = "register-box">
-          <form action ="includes/processForms.php" method = "POST" id = "registerForm">
+      <div class = "wrapper-form">
+        <div class = "form-box">
+          <form action ="includes/processRegisterForm.php" method = "POST" id = "registerForm">
             <h1>Register</h1>
           <div class = "invalidInput">
             <p id = "invalidUsername" class = "hidden red-text">Username Invalid (6-18 characters)</p>
@@ -25,7 +25,7 @@ widgets::navbar();
             <p id = "invalidEmail" class = "hidden red-text">Invalid Eamil</p>
           </div>
             <input id = "email-field" name = "emailField" type = "text" placeholder = "Email">
-            <button id = "signin-button" name = "signinButton">Register</button>
+            <button id = "signup-button" name = "signupButton">Register</button>
           </form>
           <p>Already signed up? <a class = "register-button" href = "login.php" >Sign in here</a></p>
 

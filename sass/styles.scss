@@ -157,12 +157,12 @@ nav {
  }
 }
 
-.wrapper-login{
+.wrapper-form{
   text-align:center;
   background-color:$void;
   height:100%;
   padding-top:300px;
-  .signin-box{
+  .form-box{
     background-color:white;
     display:block;
     width: 30%;
@@ -180,8 +180,6 @@ nav {
       padding:15px;
       margin-bottom:10px;
       border: none;
-
-
       width:100%;
       background-color: $form_input_back;
     }
@@ -210,27 +208,22 @@ nav {
       font-size: 12px;
       color: $void;
     }
+    textarea{
+      @extend input;
+      height: 300px;
+      font-family: 'Open Sans', sans-serif;
+
+    }
 
   }
 }
 
-.wrapper-register{
-  @extend .wrapper-login;
-  .register-box{
-    @extend .signin-box;
-  }
-}
 
 .invalidInput{
     text-align:left;
-
-
-
     .hidden{
       display:none;
-    }
-
-
+}
 }
 .red-border{
   border: 2px solid red !important;
@@ -238,4 +231,71 @@ nav {
 .red-text{
   color:red !important;
   font-size:12px !important;
+}
+
+
+.wrapper-posts{
+  background-color: $void;
+  overflow:hidden;
+  height:100%;
+  margin-top: 30px;
+  text-align: center;
+  .wrapper-table{
+    background-color:white;
+    display:block;
+    width:80%;
+    margin:0 auto;
+    margin-top:300px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    .search-btn{
+      padding-top:15px;
+      padding-bottom:15px;
+      float:right;
+      background-color: $void;
+      border:none;
+      color:white;
+      margin-bottom:10px;
+      font-size:15px;
+      &:hover{
+        cursor:pointer;
+        background-color: $dark;
+    }
+    @include screen-sm{
+      float:none;
+      display:block;
+      width:90%;
+      margin:0 auto !important;
+    }
+  }
+    input{
+      margin: 0 auto;
+      display:inline-block;
+      padding:15px;
+      margin-bottom:10px;
+      border: none;
+      width:90%;
+      background-color: $form_input_back;
+    }
+    @include screen-sm{
+      width:90%;
+      padding:20px 10px;
+      height: auto;
+    }
+  table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: black 1px solid;
+
+  td {
+
+    border: black 1px solid;
+    padding:16px;
+  }
+  th {
+    border: black 1px solid;
+    padding:16px;
+  }
+  }
+}
 }

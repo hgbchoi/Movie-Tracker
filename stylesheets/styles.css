@@ -180,14 +180,14 @@ nav ul li p {
 }
 
 /* line 160, ../sass/styles.scss */
-.wrapper-login, .wrapper-register {
+.wrapper-form {
   text-align: center;
   background-color: #0e0b16;
   height: 100%;
   padding-top: 300px;
 }
 /* line 165, ../sass/styles.scss */
-.wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
+.wrapper-form .form-box {
   background-color: white;
   display: block;
   width: 30%;
@@ -197,14 +197,14 @@ nav ul li p {
 }
 @media (max-width: 768px) {
   /* line 165, ../sass/styles.scss */
-  .wrapper-login .signin-box, .wrapper-register .signin-box, .wrapper-register .register-box {
+  .wrapper-form .form-box {
     width: 90%;
     padding: 20px 10px;
     height: auto;
   }
 }
 /* line 177, ../sass/styles.scss */
-.wrapper-login .signin-box input, .wrapper-register .signin-box input, .wrapper-register .register-box input {
+.wrapper-form .form-box input, .wrapper-form .form-box textarea {
   margin: 0 auto;
   display: block;
   padding: 15px;
@@ -213,8 +213,8 @@ nav ul li p {
   width: 100%;
   background-color: #f2f2f2;
 }
-/* line 188, ../sass/styles.scss */
-.wrapper-login .signin-box button, .wrapper-register .signin-box button, .wrapper-register .register-box button {
+/* line 186, ../sass/styles.scss */
+.wrapper-form .form-box button {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
@@ -224,39 +224,122 @@ nav ul li p {
   margin-bottom: 10px;
   font-size: 15px;
 }
-/* line 199, ../sass/styles.scss */
-.wrapper-login .signin-box button:hover, .wrapper-register .signin-box button:hover, .wrapper-register .register-box button:hover {
+/* line 197, ../sass/styles.scss */
+.wrapper-form .form-box button:hover {
   cursor: pointer;
   background-color: #333;
 }
-/* line 204, ../sass/styles.scss */
-.wrapper-login .signin-box p, .wrapper-register .signin-box p, .wrapper-register .register-box p {
+/* line 202, ../sass/styles.scss */
+.wrapper-form .form-box p {
   font-size: 12px;
   color: #CCCCCC;
 }
-/* line 208, ../sass/styles.scss */
-.wrapper-login .signin-box a, .wrapper-register .signin-box a, .wrapper-register .register-box a {
+/* line 206, ../sass/styles.scss */
+.wrapper-form .form-box a {
   text-decoration: none;
   font-size: 12px;
   color: #0e0b16;
 }
+/* line 211, ../sass/styles.scss */
+.wrapper-form .form-box textarea {
+  height: 300px;
+  font-family: 'Open Sans', sans-serif;
+}
 
-/* line 224, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 .invalidInput {
   text-align: left;
 }
-/* line 229, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .invalidInput .hidden {
   display: none;
 }
 
-/* line 235, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .red-border {
   border: 2px solid red !important;
 }
 
-/* line 238, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 .red-text {
   color: red !important;
   font-size: 12px !important;
+}
+
+/* line 237, ../sass/styles.scss */
+.wrapper-posts {
+  background-color: #0e0b16;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 243, ../sass/styles.scss */
+.wrapper-posts .wrapper-table {
+  background-color: white;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 300px;
+  padding: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/* line 251, ../sass/styles.scss */
+.wrapper-posts .wrapper-table .search-btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  float: right;
+  background-color: #0e0b16;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+/* line 260, ../sass/styles.scss */
+.wrapper-posts .wrapper-table .search-btn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+@media (max-width: 768px) {
+  /* line 251, ../sass/styles.scss */
+  .wrapper-posts .wrapper-table .search-btn {
+    float: none;
+    display: block;
+    width: 90%;
+    margin: 0 auto !important;
+  }
+}
+/* line 271, ../sass/styles.scss */
+.wrapper-posts .wrapper-table input, .wrapper-posts .wrapper-table .wrapper-form .form-box textarea, .wrapper-form .form-box .wrapper-posts .wrapper-table textarea {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  width: 90%;
+  background-color: #f2f2f2;
+}
+@media (max-width: 768px) {
+  /* line 243, ../sass/styles.scss */
+  .wrapper-posts .wrapper-table {
+    width: 90%;
+    padding: 20px 10px;
+    height: auto;
+  }
+}
+/* line 285, ../sass/styles.scss */
+.wrapper-posts .wrapper-table table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: black 1px solid;
+}
+/* line 290, ../sass/styles.scss */
+.wrapper-posts .wrapper-table table td {
+  border: black 1px solid;
+  padding: 16px;
+}
+/* line 295, ../sass/styles.scss */
+.wrapper-posts .wrapper-table table th {
+  border: black 1px solid;
+  padding: 16px;
 }
